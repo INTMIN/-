@@ -1,0 +1,245 @@
+/* 中间分类模块开始 */
+.grid{
+    height: 472px;
+}
+.grid-col1{
+    width: 190px;
+    height: 100%;
+    background-color:#6e6568;
+    color: #fff;
+    font-size: 14px;/* 给'/'的 */
+    position: relative;
+}
+.ad{
+    width: 250px;
+    height: 470px;
+    background-color:pink;
+    position: absolute;
+    top: 0;
+    left: -250px;
+}
+.ad-right{
+    position: absolute;
+    top: 0;
+    left: 250px; 
+    z-index: 999;
+    height: 470px;
+    width: 0;
+    transition: all 0.8s;
+    background:url(../images/ad-2.gif);
+}
+.ad:hover .ad-right{
+    /* 鼠标经过ad时ad-r由0变成990 */
+    width: 990px;
+
+}
+.grid-col1 a{
+    color: #fff;
+    font-size: 14px;
+    margin:0 3px; 
+}
+.grid-col1 a:hover{
+    color: #f10215;
+}
+.grid-col1 ul{
+    padding: 10px 0;
+}
+.grid-col1 ul li{
+    padding-left: 12px; 
+    height: 29px;
+    line-height: 24px;
+}
+.grid-col1 ul li:hover{
+    background-color: #9c9698;
+}
+.grid-col2{
+    width: 590px;
+    height: 100%;
+    margin-left:10px;
+    position: relative;
+}
+.arrow-l,
+.arrow-r{
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 60px;
+    background-color:rgba(0,0,0,0.3);
+    line-height: 60px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family:arial;
+    text-align: center;
+}
+.arrow-r{
+    right: 0;
+}
+.arrow-l{
+    left:0;
+}
+.grid-col3{
+    width: 200px;
+    height: 100%;  
+}
+.grid-col3-top div{
+    float: right;
+}
+.grid-col3-next div{
+    float: right;
+    margin-top: 10px;
+    line-height: 0;
+}
+.grid-col4{
+    width: 190px;
+    height: 100%;
+    background-color:skyblue;
+}
+.circle{
+    width: 168px;
+    height: 20px;
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius:10px;
+    padding-left: 10px; 
+}
+.circle li{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 4px ;
+    cursor: pointer;/* 鼠标经过li的时候变成小手 */
+}
+.circle current{
+    background-color: #f10215;
+}
+/* 右边模块 */
+.login{
+    height: 85px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+}
+.login-t{
+    width: 95px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap;/* 强制一行 */
+    overflow: hidden;
+    text-overflow: ellipsis;/* 超过的部分显示省略号 */
+    padding-left: 60px;
+    color: #666;
+    position: relative;
+}
+.login-t a{
+    color: #666;
+}
+.login-t a:hover{
+    color: #f10512;
+}
+.login-b a{
+    display:  inline-block;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    border: 2px solid #f10215;
+    margin-right: 3px;
+    text-align: center;
+    color: #f10215;
+}
+.login-b a:hover{
+    background-color: #f10215;
+    color: #fff;
+}
+.user-info{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/外框图.png) no-repeat;
+}
+.user-info img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.news{
+    height: 150px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+}
+.news-t{
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.news-t a{
+    float: left;   
+    height: 17px;
+    line-height: 17px;
+}
+.cuxiao{
+    width: 38px;
+    border-right: 1px solid #ccc;
+}
+.gg{
+    margin-left: 15px;
+}
+.news-t .more{
+    float: right;
+}
+.news-t div{
+    height: 2px;
+    width: 28px;
+    background-color: #f10215;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.news-b {
+    padding-top: 15px;
+}
+.news-b li{
+    height: 22px;
+    line-height: 22px;
+}
+.expand{
+    height: 207px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.expand ul{
+    width: 195px;/* 父亲是190 但是里面的里宽度超过了190 摆放不开四个li*/
+}
+.expand li{
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expand li a{
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+.expand li i{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: url(../images/图标1.png) no-repeat;
+    width: 18px;
+    height: 23px;
+}
+.expand li:first-child i{
+    width: 18px;
+    height: 23px;
+}
